@@ -1,0 +1,178 @@
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8; /* Optional background color */
+    position: relative;
+    z-index: 10; /* Ensure navbar is on top */
+    border-bottom:2px solid #0c7576;
+  }
+  
+  .logo {
+    margin-right: auto;
+  }
+  
+  .logo img {
+    height: 70px; /* Adjust as needed */
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 20; /* Ensure the menu is above other elements */
+  }
+  
+  .menu li {
+    margin-left: 20px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #003366;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 2px;
+    transition: color 0.3s ease;
+  }
+  
+  .menu a:hover {
+    background-color: #d2e9e7; /* Hover effect */
+  }
+  
+  /* Hamburger menu */
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border:1px solid #1b1b1b ;
+    cursor: pointer;
+    z-index: 30; /* Ensure the hamburger icon is always on top */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .menu {
+      display: none; /* Hide the menu by default */
+      flex-direction: column;
+      background-color: #f8f8f8; /* Background for mobile menu */
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 50%; /* Full-width dropdown */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+      z-index: 20; /* Ensure the dropdown is above other content */
+      padding-right: 20px;
+      padding-bottom: 20px;
+      background-color: #d2e9e7; /* Hover effect */
+      border: 1px solid#0c7576;
+     
+    }
+  
+    .menu.active {
+      display: flex;
+    }
+    
+    .menu li {
+      padding: 5px; /* Add spacing for vertical menu */
+      text-align: center; /* Center-align menu items */
+      
+    }
+  
+    .hamburger {
+      display: block; /* Show the hamburger icon on small screens */
+      margin-left: 20px;
+    }
+  }
+
+.footer {
+    padding-top: 20px;
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 10px;
+    color: #0c7576;
+  }
+  
+  .footer-section p,
+  .footer-section a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 1.5;
+  }
+  
+  .wp {
+    display: flex;
+  }
+  .wp img{
+    width: 24px;
+    height: 24px;
+    padding: 5px;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center;
+    }
+  
+    .footer-section {
+        text-align: center; /* Center content for better alignment */
+        margin: 15px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-section h4 {
+        font-size: 1.2rem; /* Slightly larger headings on small screens */
+    }
+  
+    .footer-section p,
+    .footer-section a {
+        font-size: 0.9rem; /* Adjust text size for readability */
+    }
+  
+    .footer-bottom {
+        font-size: 0.8rem; /* Smaller footer text */
+    }
+  }

@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #d2e9e7;
+    color: #333;
+}
+
+.greetings{
+    justify-content: center;
+    padding-left: 17%;
+    padding-right: 17%;
+    font-weight: bold;
+}
+
+.booking-form{
+    padding: 30px;
+}
+
+form {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+
+input, select{
+    width: 95%;
+    padding-right: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.booking-btn {
+    background-color: #0c7576;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 95%;
+    padding-right: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.booking-btn:hover {
+    background-color: #0e5a5c;
+}
+
+h1{
+    color: #003366;
+    text-align: center;
+}
+

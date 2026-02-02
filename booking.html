@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="css/booking.css">
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+    
+    <div id="navbar"></div>
+    
+    <div class="greetings" ><p><h1>Thank you for choosing our cab service! </h1>
+        We are here to ensure your travel experience is smooth, 
+        comfortable, and stress-free. Simply fill out the booking 
+        form below with your details, including your pick-up and 
+        drop-off locations, preferred car type, number of passengers, 
+        and travel date and time. Once you're done, click "Book Now" 
+        to instantly send your booking request. We will confirm your 
+        ride and ensure that your journey is perfect. Need assistance? 
+        Feel free to reach out to us anytime. We look forward to 
+        serving you!</p></div>
+
+
+    <div class="booking-form">
+        <h1>Book a Cab</h1>
+        <form id="bookingForm" onsubmit="return false;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="contact">Contact No:</label>
+            <input type="tel" id="contact" name="contact" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="pickup">Pick-up Location:</label>
+            <input type="text" id="pickup" name="pickup" required>
+
+            <label for="drop">Drop-off Location:</label>
+            <input type="text" id="drop" name="drop" required>
+
+            <label for="people">Number of People:</label>
+            <input type="number" id="people" name="people" required>
+
+            <label for="carType">Car Type:</label>
+            <select id="carType" name="carType" required>
+                <option value="dezire">Dzire</option>
+                <option value="ertiga">Ertiga</option>
+                <option value="innova">Innova</option>
+                <option value="innova">Force Traveller 13 Seater</option>
+                <option value="innova">Force Traveller 17 Seater</option>
+                <option value="innova">Minibus</option>
+            </select>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button  class="booking-btn"      type="button" onclick="sendWhatsApp()">Book Now</button>
+        </form>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="js/booking.js"></script>
+    <script src="js/layout.js"></script>
+
+</body>
+</html>

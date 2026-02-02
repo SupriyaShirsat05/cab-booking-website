@@ -1,0 +1,408 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8; /* Optional background color */
+    position: relative;
+    z-index: 10; /* Ensure navbar is on top */
+    border-bottom:2px solid #0c7576;
+  }
+  
+  .logo {
+    margin-right: auto;
+  }
+  
+  .logo img {
+    height: 70px; /* Adjust as needed */
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 20; /* Ensure the menu is above other elements */
+  }
+  
+  .menu li {
+    margin-left: 20px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #003366;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 2px;
+    transition: color 0.3s ease;
+  }
+  
+  .menu a:hover {
+    background-color: #d2e9e7; /* Hover effect */
+  }
+  
+  /* Hamburger menu */
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border:1px solid #1b1b1b ;
+    cursor: pointer;
+    z-index: 30; /* Ensure the hamburger icon is always on top */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .menu {
+      display: none; /* Hide the menu by default */
+      flex-direction: column;
+      background-color: #f8f8f8; /* Background for mobile menu */
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 50%; /* Full-width dropdown */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+      z-index: 20; /* Ensure the dropdown is above other content */
+      padding-right: 20px;
+      padding-bottom: 20px;
+      background-color: #d2e9e7; /* Hover effect */
+      border: 1px solid#0c7576;
+     
+    }
+  
+    .menu.show {
+      display: flex; /* Show menu when toggled */
+    }
+  
+    .menu li {
+      padding: 5px; /* Add spacing for vertical menu */
+      text-align: center; /* Center-align menu items */
+      
+    }
+
+  
+    .hamburger {
+      display: block; /* Show the hamburger icon on small screens */
+      margin-left: 20px;
+    }
+  }
+  
+  /* Image Slider styles */
+  .image-slider {
+    padding: 10px;
+    position: relative;
+    z-index: 1; /* Ensure slider is below the menu */
+  }
+  
+  .slider-container {
+    position: relative;
+  }
+  
+  .slide {
+    position: relative;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+/* Slider Wrapper */
+.image-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 20px 0;
+  }
+  
+  .slider-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+  }
+
+  .slide:hover .caption{
+    opacity: 1;
+    transition-duration: 1ms;
+  }
+  
+  /* Individual Slide Styles */
+  .slide {
+    position: relative;
+    flex: 0 0 30%; /* Adjust for the number of visible slides */
+    box-sizing: border-box;
+    padding: 0 10px;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    font-weight: bold;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .slide {
+      flex: 0 0 50%; /* Show two slides at a time on smaller screens */
+    }
+  
+    .caption {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+
+  }
+  
+  @media (max-width: 480px) {
+    .slide {
+      flex: 0 0 100%; /* Show one slide at a time on mobile screens */
+    }
+  
+    .caption {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
+
+  .quote{
+    border-top: 2px solid #0c7576;
+    text-align: center;
+    border-bottom: 2px solid #0c7576;
+    background-color: #d2e9e7;
+  }
+
+/* General Styles */
+.info {
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #0c7576;
+}
+
+.para {
+    padding: 50px;
+    flex: 1;
+    padding-right: 70px;
+}
+
+.para h3 {
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.infoImage img {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+/* Media Query for small devices */
+@media screen and (max-width: 768px) {
+    .info {
+        flex-direction: column; /* Stack the content vertically */
+        padding-left: 10%; /* Reduced padding for smaller screens */
+        padding-right: 10%; /* Reduced padding for smaller screens */
+    }
+
+    .para {
+        padding: 20px; /* Reduced padding for smaller screens */
+        padding-right: 0; /* Remove extra space between text and image */
+    }
+
+    .infoImage img {
+        max-width: 100%; /* Make the image responsive */
+        height: auto; /* Adjust height to maintain aspect ratio */
+        margin-top: 20px; /* Space between image and text */
+    }
+}
+
+
+.new-section {
+  background-color: #d2e9e7;
+  padding: 20px;
+  border-radius: 8px;
+  padding: 40px;
+  padding-bottom: 60px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.box {
+  flex: 1;
+  min-width: 250px; /* Ensure boxes don’t shrink too much */
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.box h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.box p {
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .row {
+    flex-wrap: wrap; /* Allow boxes to wrap */
+    justify-content: center; /* Center the items */
+  }
+
+  .box {
+    flex: 1 1 45%; /* Each box takes up 45% of the row */
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column; /* Stack the items vertically on smaller screens */
+    align-items: center; /* Center align the items */
+  }
+
+  .box {
+    flex: 1 1 100%; /* Each box takes up 100% of the row */
+    max-width: 100%;
+  }
+}
+
+
+.footer {
+  background-color: #1b1b1b;
+  color: #fff;
+  padding: 20px 0;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  color: #0c7576;
+}
+
+.footer-section p,
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.wp {
+  display: flex;
+}
+.wp img{
+  width: 24px;
+  height: 24px;
+  padding: 5px;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column; /* Stack sections vertically */
+      align-items: center;
+  }
+
+  .footer-section {
+      text-align: center; /* Center content for better alignment */
+      margin: 15px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-section h4 {
+      font-size: 1.2rem; /* Slightly larger headings on small screens */
+  }
+
+  .footer-section p,
+  .footer-section a {
+      font-size: 0.9rem; /* Adjust text size for readability */
+  }
+
+  .footer-bottom {
+      font-size: 0.8rem; /* Smaller footer text */
+  }
+}
