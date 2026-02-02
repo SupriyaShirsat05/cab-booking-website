@@ -11,3 +11,5 @@ This project demonstrates:
 
 The domain is no longer active, but the project is preserved for portfolio and continuous improvement.
 
+⚠ EmailJS keys are removed for security purposes.
+Configure your own keys to enable contact form functionality.
