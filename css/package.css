@@ -11,12 +11,19 @@ body {
     text-align: center;
 
 }
+p {
+  color: #555;
+  margin: 3px 0;
+  text-align: justify;
+}
 
 .package-para{
     margin: 20px;
-    padding: 20px;
+    padding: 10px;
     justify-content:center;
 }
+
+
 
 .table-container {
     margin: 20px;

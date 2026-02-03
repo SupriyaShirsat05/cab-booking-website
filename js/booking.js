@@ -32,9 +32,3 @@ function sendWhatsApp() {
     // Open WhatsApp in a new window or tab
     window.open(whatsappUrl, '_blank');
 }
-
-
-document.addEventListener('contextmenu', function (e) {
-  e.preventDefault();
-  alert("Right-click is disabled on this page.");
-});

@@ -160,6 +160,10 @@
         text-align: center; /* Center content for better alignment */
         margin: 15px 0;
     }
+    .footer-bottom {
+        text-align: center;
+        font-size: 0.8rem; /* Smaller footer text */
+    }
   }
   
   @media (max-width: 480px) {
@@ -173,6 +177,11 @@
     }
   
     .footer-bottom {
+        text-align: center;
         font-size: 0.8rem; /* Smaller footer text */
     }
+  }
+
+  p{
+    text-align: center;
   }

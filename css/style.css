@@ -60,7 +60,7 @@ body {
   
   .slide img {
     width: 100%;
-    height: 500px;
+    height: 650px;
     border-radius: 8px;
   }
   
@@ -124,6 +124,12 @@ body {
     padding: 50px;
     flex: 1;
     padding-right: 70px;
+}
+
+p {
+  color: #555;
+  margin: 5px 0;
+  text-align: justify;
 }
 
 .para h3 {
@@ -200,7 +206,10 @@ body {
   font-size: 14px;
   line-height: 1.6;
   text-align: center;
+  color: #555;
+  margin: 5px 0;
 }
+
 
 /* Responsive Design */
 @media (max-width: 1024px) {
