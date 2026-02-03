@@ -1,14 +1,4 @@
 
-// JavaScript for toggling the menu on smaller screens
-// JavaScript for hamburger menu toggle
-const hamburger = document.querySelector('.hamburger');
-const menu = document.querySelector('.menu');
-
-hamburger.addEventListener('click', () => {
-  menu.classList.toggle('show');
-});
-
-
 const sliderContainer = document.querySelector('.slider-container');
 const slides = document.querySelectorAll('.slide');
 let currentIndex = 0;

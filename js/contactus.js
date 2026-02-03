@@ -1,11 +1,4 @@
-const hamburger = document.querySelector('.hamburger');
-const menu = document.querySelector('.menu');
-
-hamburger.addEventListener('click', () => {
-  menu.classList.toggle('show');
-});
-
-emailjs.init("UEy093ehBS4d2-3C1"); // Replace with your actual Public Key
+emailjs.init("YOUR_PUBLIC_KEY"); 
 
 function sendMail() {
   const params = {
@@ -16,7 +9,7 @@ function sendMail() {
   };
 
   emailjs
-    .send("service_ntbyopv", "template_jrmiwl4", params)
+    .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", params)
     .then((response) => {
       console.log("SUCCESS!", response.status, response.text);
       alert("Message sent successfully!");
